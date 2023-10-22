@@ -10,9 +10,14 @@ https://api-celestia.t.crouton.digital
 ```
 **gRPC:**
 ```
-https://grpc-celestia.t.crouton.digital
+grpc-celestia.t.crouton.digital:10090
 ```
 **gRPC-web:**
 ```
-https://grpc-web-celestia.t.crouton.digital
+grpc-web-celestia.t.crouton.digital:10091
+```
+
+**Peer:**
+```
+28a8540126219298f40986d686a63fce401f9a14@peer-celestia.t.crouton.digital:27656
 ```

@@ -21,7 +21,7 @@ grpc-web-celestia.t.crouton.digital:10091
 ```
 28a8540126219298f40986d686a63fce401f9a14@peer-celestia.t.crouton.digital:27656
 ```
-
+___
 ### Recovery
 
 #### State-sync

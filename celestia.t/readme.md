@@ -29,7 +29,7 @@ ___
 #### STATE SYNC
 
 ```bash
-sudo systemctl stop celestia-appd \
+sudo systemctl stop celestia-appd ; \
 celestia-appd tendermint unsafe-reset-all --home ~/.celestia-app/ --keep-addr-book
 ```
 ```bash

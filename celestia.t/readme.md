@@ -23,6 +23,7 @@ grpc-web-celestia.t.crouton.digital:10091
 ```
 ___
 ## Recovery
+
 ```python
 STATE-SYNC
 ```

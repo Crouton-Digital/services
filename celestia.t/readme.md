@@ -25,7 +25,7 @@ ___
 ## Recovery
 
 ```python
-STATE-SYNC
+STATE SYNC
 ```
 ```
 sudo systemctl stop celestia-appd \

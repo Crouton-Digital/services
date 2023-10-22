@@ -1,4 +1,4 @@
-## Endpoints:
+## ENDPOINTS:
 
 **RPC:**
 ```https
@@ -22,11 +22,11 @@ grpc-web-celestia.t.crouton.digital:10091
 28a8540126219298f40986d686a63fce401f9a14@peer-celestia.t.crouton.digital:27656
 ```
 ___
-## Recovery
+## RECOVERY
 
-```python
-STATE SYNC
-```
+
+### STATE SYNC
+
 ```
 sudo systemctl stop celestia-appd \
 celestia-appd tendermint unsafe-reset-all --home ~/.celestia-app/ --keep-addr-book
@@ -49,7 +49,7 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.celestia-app/config/confi
 ```
 sudo systemctl restart celestia-appd && sudo journalctl -u celestia-appd -f -o cat
 ```
-### Snapshot
+### SNAPSHOT
 ```
 Soon
 ```

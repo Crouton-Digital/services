@@ -1,5 +1,6 @@
-## ENDPOINTS:
-
+___
+**ENDPOINTS**
+___
 **RPC:**
 ```https
 https://rpc-celestia.t.crouton.digital
@@ -25,7 +26,7 @@ ___
 **RECOVERY**
 ___
 
-### STATE SYNC
+#### STATE SYNC
 
 ```
 sudo systemctl stop celestia-appd \
@@ -49,7 +50,7 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.celestia-app/config/confi
 ```
 sudo systemctl restart celestia-appd && sudo journalctl -u celestia-appd -f -o cat
 ```
-### SNAPSHOT
+#### SNAPSHOT
 ```
 Soon
 ```

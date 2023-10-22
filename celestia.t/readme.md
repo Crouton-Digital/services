@@ -1,4 +1,4 @@
 **RPC:**
-```http
+```https
 https://rpc-celestia.t.crouton.digital
 ```

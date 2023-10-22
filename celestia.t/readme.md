@@ -47,3 +47,7 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.celestia-app/config/confi
 ```
 sudo systemctl restart celestia-appd && sudo journalctl -u celestia-appd -f -o cat
 ```
+#### Snapshot
+```
+Soon
+```

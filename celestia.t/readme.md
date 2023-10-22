@@ -23,8 +23,9 @@ grpc-web-celestia.t.crouton.digital:10091
 ```
 ___
 ## Recovery
-
-### State-sync
+```ruby
+STATE-SYNC
+```
 ```
 sudo systemctl stop celestia-appd \
 celestia-appd tendermint unsafe-reset-all --home ~/.celestia-app/ --keep-addr-book

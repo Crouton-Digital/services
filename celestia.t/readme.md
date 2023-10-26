@@ -11,16 +11,16 @@ https://api-celestia.t.crouton.digital
 ```
 **gRPC:**
 ```
-grpc-celestia.t.crouton.digital:10090
+grpc-celestia.t.crouton.digital:9390
 ```
 **gRPC-web:**
 ```
-grpc-web-celestia.t.crouton.digital:10091
+grpc-web-celestia.t.crouton.digital:9391
 ```
 
 **Peer:**
 ```
-28a8540126219298f40986d686a63fce401f9a14@peer-celestia.t.crouton.digital:27656
+c13acb30480216ade8e182f7adc9206842d849b7@peer-celestia.t.crouton.digital:26956
 ```
 ___
 **RECOVERY**
@@ -51,7 +51,7 @@ s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
 s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.celestia-app/config/config.toml
 ```
 ```bash
-peers="28a8540126219298f40986d686a63fce401f9a14@peer-celestia.t.crouton.digital:27656"
+peers="c13acb30480216ade8e182f7adc9206842d849b7@peer-celestia.t.crouton.digital:26956"
 sed -i.bak -e  "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.celestia-app/config/config.toml
 ```
 ```bash

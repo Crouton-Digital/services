@@ -59,5 +59,24 @@ sudo systemctl restart celestia-appd && sudo journalctl -u celestia-appd -f -o c
 ```
 #### SNAPSHOT
 ```
-Soon
+sudo apt update && \
+sudo apt-get install snapd lz4 -y
+```
+```
+sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1false|" ~/.celestia-app/config/config.toml
+```
+```
+sudo systemctl stop celestia-appd
+
+cp $HOME/.celestia-app/data/priv_validator_state.json $HOME/.celestia-app/priv_validator_state.json.backup
+
+rm -rf ~/.celestia-app/data
+
+celestia-appd tendermint unsafe-reset-all --home ~/.celestia-app/ --keep-addr-book
+
+SNAP_NAME=$(curl -s "http://65.108.238.215:8000/celestia-testnet-snapshots/" | grep -oP '>[^<]+\.tar\.lz4' | tr -d '>')
+
+curl -o - -L http://65.108.238.215:8000/celestia-testnet-snapshots/${SNAP_NAME}  | lz4 -c -d - | tar -x -C $HOME/.celestia-app
+
+mv $HOME/.celestia-app/priv_validator_state.json.backup $HOME/.celestia-app/data/priv_validator_state.json
 ```

@@ -11,15 +11,15 @@ https://api-celestia.m.crouton.digital
 ```
 **gRPC:**
 ```
-grpc-celestia.t.crouton.digital:9590
+grpc-celestia.m.crouton.digital:9590
 ```
 **gRPC-web:**
 ```
-grpc-web-celestia.t.crouton.digital:9591
+grpc-web-celestia.m.crouton.digital:9591
 ```
 
 **Peer:**
 ```
-?????@peer-celestia.t.crouton.digital:27156
+?????@peer-celestia.m.crouton.digital:27156
 ```
 ___
